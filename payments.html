@@ -56,18 +56,16 @@ title: Payment Policies
       </tr>
     </thead>
     <tbody>
+      {% for item in site.data.fees.school %}
       <tr>
-        <td>School meetings</td>
-        <td>&#36;50/hour</td>
+        <td>{{ item.service }}</td>
+        {% if item.rate %}
+          <td>&#36;{{ item.fee }} {{ item.rate }}</td>
+        {% else %}
+          <td>&#36;{{ item.fee }}</td>
+        {% endif %}
       </tr>
-      <tr>
-        <td>Verification of services (letter for schools)</td>
-        <td>&#36;25</td>
-      </tr>
-      <tr>
-        <td>Progress reports or evaluations</td>
-        <td>&#36;25</td>
-      </tr>
+      {% endfor %}
     </tbody>
   </table>
 </section>

@@ -1,0 +1,24 @@
+general:
+  - service: Initial consultation (by phone or in person)
+    free: Up to 30 minutes
+    fee: 15
+    rate: each additional 15 minutes
+  - service: 55-minute individual session
+    fee: 125
+  - service: One-hour parent meeting
+    fee: 50
+school:
+  - service: School meetings
+    fee: 50
+    rate: per hour
+  - service: Verification of services (letter for schools)
+    fee: 25
+  - service: Progress reports or evaluations
+    fee: 25
+clinical:
+  - service: Individual supervision
+    fee: 45
+    rate: per hour
+  - service: Per student for group supervision
+    fee: 35
+    rate: per hour
