@@ -10,13 +10,23 @@ title: Payment Policies
 <section>
   <h3>Session Fees</h3>
   <table>
-    <thead>
-      <tr>
-        <th>Session</th>
-        <th>Fee</th>
-      </tr>
-    </thead>
+    {% include payment-thead.html %}
     <tbody>
+      {% for item in site.data.fees.general %}
+      <tr>
+        <td>{{ item.service }}</td>
+        {% if item.free %}
+          <td>
+            <ul>
+              <li>{{ item.free }} free of charge</li>
+              <li>&#36;{{ item.fee }} for {{ item.rate }}</li>
+            </ul>
+          </td>
+        {% else %}
+          <td>&#36;{{ item.fee }}</td>
+        {% endif %}
+      </tr>
+      {% endfor %}
       <tr>
         <td>Initial consultation (by phone or in person)</td>
         <td>
@@ -49,12 +59,7 @@ title: Payment Policies
   <h3>School Meetings &amp; Consultations</h3>
   <p>I hold a <a href="about.html">Professional Educator License</a> in School Social Work and Education of the Deaf/Hard of Hearing. I am available to attend school meetings and provide consultation. These fees are <strong>not covered by insurance</strong>.</p>
   <table>
-    <thead>
-      <tr>
-        <th>Service</th>
-        <th>Fee</th>
-      </tr>
-    </thead>
+    {% include payment-thead.html %}
     <tbody>
       {% for item in site.data.fees.school %}
       <tr>
@@ -72,21 +77,14 @@ title: Payment Policies
 <section>
   <h3>Clinical Supervision</h3>
   <table>
-    <thead>
-      <tr>
-        <th>Service</th>
-        <th>Fee</th>
-      </tr>
-    </thead>
+    {% include payment-thead.html %}
     <tbody>
+      {% for item in site.data.fees.clinical %}
       <tr>
-        <td>Individual supervision</td>
-        <td>&#36;45/hour</td>
+        <td>{{ item.service }}</td>
+        <td>&#36;{{ item.fee }} {{ item.rate }}</td>
       </tr>
-      <tr>
-        <td>Per student for group supervision</td>
-        <td>&#36;35/hour</td>
-      </tr>
+      {% endfor %}
     </tbody>
   </table>
 </section>
