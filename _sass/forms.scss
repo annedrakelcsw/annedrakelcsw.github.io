@@ -1,0 +1,19 @@
+.forms-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  .form {
+    display: flex;
+    padding: 1.5em;
+    font-size: 1.5em;
+    background-color: rgba(#eee, .3);
+    // border: 1px solid $accent-blue;
+    .form-icon {
+      flex: 0 0 2em;
+      color: $accent-blue;
+    }
+    .form-content {
+      flex: 1;
+    }
+  }
+}

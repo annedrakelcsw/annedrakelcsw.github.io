@@ -30,6 +30,10 @@
   #profile-image {
     max-width: 90%;
   }
+  .forms-list {
+    display: grid;
+    grid-template-columns: none;
+  }
   footer {
     #footer-content {
       width: 90%;

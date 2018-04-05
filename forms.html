@@ -5,9 +5,18 @@ title: Forms
 <section>
   <h2>{{ page.title }}</h2>
   <p>Please download, print, and complete the following paperwork prior to your first appointment.</p>
-  {% for form in site.data.forms %}
-  <ul class="pdf-list">
-    <li><i class="far fa-file-pdf fa-fw"></i>&nbsp;<a href="{{ site.baseurl }}/forms/{{ form.filename }}">{{ form.title }}</a></li>
-  </ul>
-  {% endfor %}
+
+  <div class="forms-list">
+    {% for form in site.data.forms %}
+      <div class="form">
+        <div class="form-icon">
+          <i class="far fa-file-pdf fa-fw"></i>
+        </div>
+        <div class="form-title">
+          <a href="{{ site.baseurl }}/forms/{{ form.filename }}">{{ form.title }}</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
 </section>
