@@ -21,6 +21,7 @@
       <h1>{{ site.title }}</h1>
       <a href="index.html"><img src="{{ site.baseurl }}/images/anne-drake-lcsw-logo-400x74.png" alt="{{ site.title }}" title="{{ site.title }}" id="logo"></a>
       <nav>
+        <a href="index.html"><i class="fas fa-hand-holding fa-fw"></i>&nbsp;Services</a>
         <a href="about.html"><i class="fas fa-info-circle fa-fw"></i>&nbsp;About Me</a>
         <a href="forms.html"><i class="fab fa-wpforms fa-fw"></i></i>&nbsp;Forms</a>
         <a href="payments.html"><i class="fas fa-dollar-sign fa-fw"></i>&nbsp;Payment Policies</a>
@@ -51,6 +52,14 @@
             </div>
             <div class="icon-content">
               <a href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a>
+            </div>
+          </div>
+          <div class="icon-box">
+            <div class="icon-img">
+              <i class="fas fa-phone fa-fw"></i>
+            </div>
+            <div class="icon-content">
+              {{ site.data.contact.phone }}
             </div>
           </div>
           <div class="icon-box">
