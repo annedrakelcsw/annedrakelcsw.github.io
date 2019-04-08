@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <title>Anne Drake, LCSW - Counseling and Play Therapy</title>
+  </head>
+  <body>
+    <header class="clearfix">
+      <h1>Anne Drake, LCSW - Counseling and Play Therapy</h1>
+      <a href="index.html"><img src="/images/anne-drake-lcsw-logo-400x74.png" alt="Anne Drake, LCSW - Counseling and Play Therapy" title="Anne Drake, LCSW - Counseling and Play Therapy" id="logo"></a>
+      <nav>
+        <a href="index.html"><i class="fas fa-child fa-fw"></i>&nbsp;Services</a>
+        <a href="about.html"><i class="fas fa-info-circle fa-fw"></i>&nbsp;About</a>
+        <a href="forms.html"><i class="fab fa-wpforms fa-fw"></i></i>&nbsp;Forms</a>
+        <a href="payments.html"><i class="fas fa-dollar-sign fa-fw"></i>&nbsp;Payments</a>
+        <!-- <a href="#"><i class="far fa-bookmark fa-fw"></i>&nbsp;Resources</a> -->
+        <a href="faqs.html"><i class="far fa-question-circle fa-fw"></i>&nbsp;FAQs</a>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <blockquote class="clearfix">
+        <p>&ldquo;<span id="quote-content"></span>&rdquo;</p>
+        <p>&mdash; <span id="quote-source"></span></p>
+      </blockquote>
+    </section>
+    <main>
+      <section>
+  <h2>Forms</h2>
+  <p>And of course there is some paperwork! Please fill out all four of the forms and bring them with you to the first appointment. If you have any questions, please let me know!</p>
+
+  <div class="forms-list">
+    
+      <div class="form">
+        <div class="form-icon">
+          <i class="far fa-file-pdf fa-fw"></i>
+        </div>
+        <div class="form-title">
+          <a href="/forms/intake-form.pdf">New Client Intake Form</a>
+        </div>
+      </div>
+    
+      <div class="form">
+        <div class="form-icon">
+          <i class="far fa-file-pdf fa-fw"></i>
+        </div>
+        <div class="form-title">
+          <a href="/forms/informed-consent.pdf">Informed Consent</a>
+        </div>
+      </div>
+    
+      <div class="form">
+        <div class="form-icon">
+          <i class="far fa-file-pdf fa-fw"></i>
+        </div>
+        <div class="form-title">
+          <a href="/forms/release-of-information.pdf">Release of Protected Health Information</a>
+        </div>
+      </div>
+    
+  </div>
+
+</section>
+
+    </main>
+    <footer>
+      <div id="footer-content" class="clearfix">
+        <div class="left">
+          <p><i class="far fa-copyright fa-fw"></i>&nbsp;2018&#8212;2019 Anne Drake, LCSW</p>
+          <p><i class="fas fa-pencil-alt fa-fw"></i>&nbsp;Website by Tom Drake</p>
+        </div>
+        <div class="right">
+          <div class="icon-box">
+            <div class="icon-img">
+              <i class="far fa-envelope fa-fw"></i>
+            </div>
+            <div class="icon-content">
+              annedrakelcsw@gmail.com
+            </div>
+          </div>
+          <div class="icon-box">
+            <div class="icon-img">
+              <i class="fas fa-phone fa-fw"></i>
+            </div>
+            <div class="icon-content">
+              224-477-4441
+            </div>
+          </div>
+          <div class="icon-box">
+            <div class="icon-img">
+              <i class="fas fa-map-marker-alt fa-fw"></i>
+            </div>
+            <div class="icon-content">
+              <address>7627 Lake St Suite 217, River Forest, IL 60305</address>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      var quotes = [{"content":"Children need someone to reassure them that their own, unique imaginative play is something to be valued.","source":"Fred Rogers"},{"content":"Play is a child's work and this is not a trivial pursuit.","source":"Alfred Adler"},{"content":"Play is the highest expression of human development in childhood, for it alone is the free expression of what is in a child's soul.","source":"Friedrich Froebel"},{"content":"You can discover more about a person in an hour of play than in a year of conversation.","source":"Plato"}]
+      var randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+      var quoteContentTag = document.getElementById("quote-content");
+      var quoteSourceTag = document.getElementById("quote-source");
+      if (document.getElementsByTagName("H2")[0].textContent == "Services") {
+        quoteContentTag.innerHTML = "Enter into children's play and you will find the place where their minds, hearts, and souls meet.";
+        quoteSourceTag.innerHTML = "Virginia Axline";
+      } else {
+        quoteContentTag.innerHTML = randomQuote.content;
+        quoteSourceTag.innerHTML = randomQuote.source;
+      }
+    </script>
+
+  </body>
+</html>
