@@ -4,6 +4,8 @@ general:
     fee: 15
     rate: each additional 15 minutes
   - service: 55-minute individual session
+    fee: 135
+  - service: 55-minute individual session (paid privately)
     fee: 125
   - service: One-hour parent meeting
     fee: 50
