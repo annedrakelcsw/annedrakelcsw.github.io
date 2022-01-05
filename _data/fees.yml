@@ -1,25 +1,31 @@
 general:
-  - service: Initial consultation (by phone or in person)
+  - service: Initial consultation by phone
     free: Up to 30 minutes
     fee: 15
     rate: each additional 15 minutes
-  - service: 55-minute individual session
+  - service: Initial diagnostic evaluation session
     fee: 135
-  - service: 55-minute individual session (paid privately)
+  - service: 30-minute individual session
+    fee: 62
+  - service: 45-minute individual session
+    fee: 94
+  - service: 55-minute individual session
     fee: 125
-  - service: One-hour parent meeting
+  - service: 60-minute family session
+    fee: 135
+  - service: 60-minute parent meeting by phone, in person, or by telehealth
     fee: 50
 school:
   - service: School meetings
     fee: 50
     rate: per hour
   - service: Verification of services (letter for schools)
-    fee: 25
+    fee: 50
   - service: Progress reports or evaluations
-    fee: 25
+    fee: 50
 clinical:
   - service: Individual supervision
-    fee: 45
+    fee: 50
     rate: per hour
   - service: Per student for group supervision
     fee: 35
