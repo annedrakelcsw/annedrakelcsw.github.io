@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{site.baseurl}}/css/style.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -28,7 +28,12 @@
         <a href="faqs.html"><i class="far fa-question-circle fa-fw"></i>&nbsp;FAQs</a>
       </nav>
     </header>
-
+    <section id="notice">
+      <div id="notice-content">
+        <h2><i class="fas fa-bullhorn"></i>&nbsp;Announcement!</h2>
+        <p>In June 2022, I am relocating my practice from River Forest, Illinois to Lawrence, Kansas. It has been an honor and privilege to work with the great families in River Forest. I look forward to working with and getting to know many new families in Lawrence. Check back soon for more details!</p>
+      </div>
+    </section>
     <section id="hero">
       <blockquote class="clearfix">
         <p>&ldquo;<span id="quote-content"></span>&rdquo;</p>
@@ -53,22 +58,22 @@
               {{ site.data.contact.email }}
             </div>
           </div>
-          <div class="icon-box">
+          <!-- <div class="icon-box">
             <div class="icon-img">
               <i class="fas fa-phone fa-fw"></i>
             </div>
             <div class="icon-content">
               {{ site.data.contact.phone }}
             </div>
-          </div>
-          <div class="icon-box">
+          </div> -->
+          <!-- <div class="icon-box">
             <div class="icon-img">
               <i class="fas fa-map-marker-alt fa-fw"></i>
             </div>
             <div class="icon-content">
               <address>{{ site.data.contact.street }} {{ site.data.contact.unit }}, {{ site.data.contact.city }}, {{ site.data.contact.state }} {{ site.data.contact.zip }}</address>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </footer>
